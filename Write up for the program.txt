@@ -55,6 +55,7 @@ get_api_definition(): Calls the external API to get the word's definition.
 calculate_time(): Measures the time taken for a search.
 Methods for handling binary search in WordNet files, like binary_search_wordnet().
 
+Implementation 
 Step 1: main menu system
 Step 2: Write the lookup logic, first implementing WordNet lookup via binary search
 Step 3: Implement the API-based lookup fallback
@@ -71,3 +72,12 @@ Step 5: Test the system
 ---
 Reflection
 
+Sorting the work into smaller sub categories made it easier to work on and easier to
+understand the logic of, rather than fumbling around in a huge code base with no idea
+what goes where or how each part works with everything else. The plans for the project
+changed on how it was going to be implemented while working, originally there was going
+to be a small subsection of specific words that were in a txt file, but it quickly became
+evident and instead ended up using WordNet, which is free libre and contains a majority
+of all words. It's a lot easier to go through with a plan with multiple steps as well as
+adapt to it, rather than having one idea in your head that you could forget parts of or
+wildly misinteperet how hard it is to create.
