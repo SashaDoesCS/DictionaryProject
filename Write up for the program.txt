@@ -1,0 +1,73 @@
+
+### Lab 3
+**Part 1: Idea Generation and Vetting**
+
+**Brainstormed Ideas:**
+1. **Word Dictionary Search**  
+   - Structure: Build a dictionary where words are keys and their definitions are the values.  
+   - Sorting: Organize the dictionary alphabetically by keys.  
+   - Binary Search: Use binary search to find a specific word’s position in the sorted dictionary. If found, return its definition.
+
+2. **University Course Search**  
+   - Structure: Create a list of courses, each containing attributes like course name, department, and prerequisites.  
+   - Sorting: Sort the list by course name or department.  
+   - Binary Search: Use binary search to find a specific course by name or department, and return its details.
+
+3. **Restaurant Menu Search**  
+   - Structure: Design a menu list with attributes like item name, category, and price.  
+   - Sorting: Sort the menu by item name or category.  
+   - Binary Search: Use binary search to find a specific menu item or category, returning its details.
+
+Prompt for AI - - - project idea using binary search with python as a student, don't explain detail yet ,just give the idea at least 4 different, not too long to code , something interesting to learn more about python binary search
+
+**AI-Prompted Ideas**:
+1. **Number Guessing Game**: A binary search-driven game where the computer guesses the user's number.  
+2. **Sorted List Search**: Search a user-inputted sorted list of numbers for a specific target using binary search.  
+3. **Book Index Finder**: Search for book titles or chapters in a sorted list using binary search.  
+4. **Temperature Log Search**: Search temperature readings (sorted by date) to find the first occurrence below or above a certain threshold.
+
+**Final Decision**:  
+After group discussions and feedback from the professor, we chose to work on **Word Search in a Dictionary**. It's a classic and simple approach, allowing us to focus on implementing binary search without too many complexities.
+
+---
+
+**Part 2: Project Breakdown**  
+Input: User interaction through a menu to either look up a specific word or find a random word.
+Process:
+Search for the word in WordNet's local dataset using binary search.
+If the word is not found in WordNet, search through an external API (Dictionary API).
+Measure the time taken for each search.
+Output: Display the definition of the word and related words, or a message if no definition is found. Also, display the time taken for the search.
+
+Internal Systems
+Menu System: Manages the user's input choices.
+Lookup System: Handles the logic of looking up the word either from the WordNet dataset or from the API.
+Timing System: Measures the time taken for each lookup.
+File Handling System: Reads WordNet files and performs binary search on them.
+Random Word System: Selects a random word from WordNet for the user to look up.
+
+Functions
+display_menu(): Displays menu options and takes user input.
+lookup_word(): Handles looking up a word, using WordNet first, then API if needed.
+find_random_word(): Selects a random word from WordNet and calls lookup_word().
+get_wordnet_definition(): Binary search in WordNet files.
+get_api_definition(): Calls the external API to get the word's definition.
+calculate_time(): Measures the time taken for a search.
+Methods for handling binary search in WordNet files, like binary_search_wordnet().
+
+Step 1: main menu system
+Step 2: Write the lookup logic, first implementing WordNet lookup via binary search
+Step 3: Implement the API-based lookup fallback
+Step 4: Integrate time checks
+Step 5: Test the system 
+
+
+**Dictionary Menu:**
+1. Look up a word
+2. Find a random word
+3. Exit  
+*Enter your choice:* 
+
+---
+Reflection
+
